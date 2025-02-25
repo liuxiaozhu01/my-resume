@@ -1,0 +1,94 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{progressbar}
+% \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+% {
+% % change Large font here
+% \Large{
+%   \begin{tabu}{ c l r }
+%    \multirow{5}{1in}{\includegraphics[width=0.88in]{avatar}} & \scshape{Bin Yuan} & {Python~}\progressbar{0.75} \\
+%     & \email{yuanbin2014@gmail.com} & {Scala~}\progressbar{0.5} \\
+%     & \phone{(+86) 131-221-87xxx} & {Linux~}\progressbar{0.7} \\
+%     & \linkedin[billryan8]{https://www.linkedin.com/in/billryan8} & {Flask~}\progressbar{0.5} \\
+%     & \github[github.com/billryan]{https://github.com/billryan} & {Javascript~}\progressbar{0.5}
+%   \end{tabu}
+% }
+% }
+
+% {
+% % change Large font here
+% \Large{
+%   \begin{tabu}{ c l }
+%    \multirow{4}{1in}{\includegraphics[width=0.88in]{lzj_avatar}} & \scshape{Zujing Liu} \\
+%     & \email{zujing.liu@whu.edu.cn} \\
+%     & \phone{(+86) 187-9005-5889} \\
+%     & \homepage[liuxiaozhu.github.io]{https://liuxiaozhu01.github.io/} \\
+%     & \github[github.com/liuxiaozhu01]{https://github.com/liuxiaozhu01} 
+%   \end{tabu}
+% }
+% }
+
+{
+% change Large font here
+\Large{
+  \begin{tabularx}{\textwidth}{@{} c X r @{}}
+   \multirow{4}{1in}[1.em]{\includegraphics[width=0.88in]{lzj_avatar}} & \textbf{刘祖靖} & \email{zujing.liu@whu.edu.cn} \\
+    & 武汉大学\ 计算机学院 & \phone{(+86) 187-9005-5889} \\
+    & 计算机科学与技术 & \homepage[liuxiaozhu.github.io]{https://liuxiaozhu01.github.io/} \\
+    &                  & \github[github.com/liuxiaozhu01]{https://github.com/liuxiaozhu01} 
+  \end{tabularx}
+}
+}
+
+\section{\faGraduationCap\ 教育经历}
+\datedsubsection{\textbf{武汉大学}}{2023.09 -- 至今}
+\textit{学术型硕士（推免）}————计算机科学与技术————导师夏桂松（杰青，教授）、高源（副教授）
+% \datedsubsection{计算机学院-计算机科学与技术-导师夏桂松（杰青，教授）、高源（副教授）}{\textit{学术型硕士（推免）}}
+\datedsubsection{\textbf{武汉大学}}{2019.09 -- 2023.07}
+\textit{学士（荣誉学位）} ————计算机科学与技术（弘毅班）————GPA3.81/4.00, Top14\% 
+% \datedsubsection{计算机学院-计算机科学与技术（弘毅班）-GPA3.81/4.00, Top14\% }{\textit{学士（荣誉学位）}}
+
+\section{\faTasks\ 项目经历}
+\datedsubsection{\textbf{智能可信辨识技术及在城市安全领域的应用}}{2020.09 -- 2021.08（本科）}
+% 湖北省技术创新专项（重大项目）
+\begin{itemize}
+  \item 开发室内场景 3D 行人仿真模块，实现实时渲染与动态目标追踪，支持自由视点交互操作。
+  % 实现真实室内情景实时模拟，提供自由视角与对象跟踪等可操作功能。
+  \item 主导视频展示模块，设计实现 “流水线式视频处理分析框架”，视频处理分析延迟降低60\%。
+  \item 提出 “视频流帧率调整方法、装置、设备及可读存储介质”，现已获得发明专利授权。% 解决视频帧率波动与缺失帧问题，（专利号：ZL 2021 1 1639965.1）
+\end{itemize}
+
+
+\section{\faUsers\ 科研经历}
+\datedsubsection{\textbf{Bypass Back-propagation: Optimization-based Structural Pruning for Large Language Models via Policy Gradient}}{ACL 投稿}
+% \role{Summer Intern}{Manager: xxx}
+% Brief introduction: xxx.
+\begin{itemize}
+  \item 一种\textcolor{red}{基于优化的 LLM 结构化剪枝方法}，直接以模型损失为剪枝优化目标。
+  \item 使用伯努利分布对剪枝掩码进行概率化建模，通过策略梯度估计器优化概率参数，\textbf{避免反向传播}。
+  \item 与现有的启发式剪枝技术相比，性能更优越，并兼顾计算高效性。
+\end{itemize}
+
+\section{\faTrophy\ 荣誉奖项}
+\datedsubsection{本科阶段}{2019 -- 2023}
+\begin{itemize}[parsep=0.5ex]
+  \item 武汉大学乙等学业奖学金（2021）
+  \item 武汉大学三好学生（2021）
+  \item 国家励志奖学金（2020-2022）
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
